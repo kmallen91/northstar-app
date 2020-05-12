@@ -11,8 +11,8 @@ exports.up = function(knex) {
         .onUpdate('CASCADE')
         .onDelete('CASCADE')
       table.string('name', 128)
-      table.integer('lower_parameter', 128)
-      table.integer('upper_parameter', 128)
+      table.decimal('lower_parameter', 128)
+      table.decimal('upper_parameter', 128)
 
   })
 };
